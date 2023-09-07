@@ -1,0 +1,8 @@
+@use "./colors.scss" as colors;
+
+* {
+  border: 0;
+  padding: 0;
+  background: colors.$primary;
+  font-family: "Lato", sans-serif;
+}
