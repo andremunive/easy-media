@@ -14,7 +14,6 @@ export class FiltersComponent {
   filterByDate: string = '';
 
   emitDate() {
-    console.log(this.filterByDate);
     this.date.emit(this.filterByDate);
   }
   emitWord() {

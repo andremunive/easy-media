@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AllPostsComponent {
   byDate = true;
   byWord = true;
+
+  filterByWord(event: string) {
+    console.log(event);
+  }
+  filterByDate(event: string) {}
 }
