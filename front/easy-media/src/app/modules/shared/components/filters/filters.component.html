@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="by-words" *ngIf="byWord">
+    <div class="title">
+      <span class="main-title">Words to Search?</span>
+      <span class="result">Showing x/z Post</span>
+    </div>
+    <input
+      type="text"
+      placeholder="post"
+      [(ngModel)]="filterByWord"
+      (input)="emitWord()"
+    />
+  </div>
+  <div class="by-date" *ngIf="byDate">
+    <div class="title">
+      <span class="main-title">Date Selected</span>
+    </div>
+    <input
+      type="date"
+      placeholder="post"
+      [(ngModel)]="filterByDate"
+      (input)="emitDate()"
+    />
+  </div>
+</div>

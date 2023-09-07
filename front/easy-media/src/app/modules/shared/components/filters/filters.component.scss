@@ -1,0 +1,47 @@
+@use "../../../../../assets/build/scss/colors.scss" as colors;
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+  .by-words {
+    width: 90%;
+    .title {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      .result {
+        font-weight: 300;
+        font-size: 12px;
+        color: colors.$gray-light;
+      }
+    }
+    input {
+      margin-bottom: 10px;
+    }
+  }
+  .by-date {
+    width: 90%;
+  }
+}
+
+.main-title {
+  font-size: 4vw;
+  font-weight: 700;
+  color: colors.$blue-dark-10;
+}
+
+input {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 16px;
+  height: 27px;
+  padding: 0 10px;
+  color: colors.$gray-light-30;
+  &::placeholder {
+    color: colors.$gray-light-20;
+  }
+}
