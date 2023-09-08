@@ -1,0 +1,11 @@
+<div class="container" *ngIf="true">
+  <div class="header">My Publications</div>
+  <div class="filters">
+    <app-filters [byDate]="byDate" (date)="filterByDate($event)"></app-filters>
+  </div>
+  <div class="posts">
+    <app-posts></app-posts>
+  </div>
+</div>
+
+<app-no-results *ngIf="false"></app-no-results>

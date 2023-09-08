@@ -26,6 +26,13 @@ const routes: Routes = [
             (m) => m.AllPostsModule
           ),
       },
+      {
+        path: 'my-posts',
+        loadChildren: () =>
+          import('./modules/my-publications/my-publications.module').then(
+            (m) => m.MyPublicationsModule
+          ),
+      },
     ],
   },
 ];

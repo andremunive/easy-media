@@ -14,6 +14,7 @@
   <div class="by-date" *ngIf="byDate">
     <div class="title">
       <span class="main-title">Date Selected</span>
+      <span class="result" *ngIf="!byWord">Showing x/z Post</span>
     </div>
     <input
       type="date"
